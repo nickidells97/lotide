@@ -1,6 +1,10 @@
-const eqArrays = (arr1, arr2) =>
-  arr1.length === arr2.length &&
-  arr1.every((v, i) => v === arr2[i]);
+const eqArrays = function(arr1, arr2) {
+  if (JSON.stringify(arr1) === JSON.stringify(arr2)) {
+    return true
+  } else {
+    return false
+  }
+}
 
  const assertArraysEqual = function(actual, expected) {
   if (JSON.stringify(actual) === JSON.stringify(expected)) {

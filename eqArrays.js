@@ -5,9 +5,13 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   return;
 };
-const eqArrays = (arr1, arr2) =>
-  arr1.length === arr2.length &&
-  arr1.every((v, i) => v === arr2[i]);
+const eqArrays = function(arr1, arr2) {
+  if (JSON.stringify(arr1) === JSON.stringify(arr2)) {
+    return true
+  } else {
+    return false
+  }
+}
 
 // test code
 assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true);
