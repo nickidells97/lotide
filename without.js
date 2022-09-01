@@ -1,18 +1,16 @@
 const eqArrays = function(arr1, arr2) {
-  if (JSON.stringify(arr1) === JSON.stringify(arr2)) {
-    return true;
-  } else {
-    return false;
-  }
+  return Array.isArray(arr1) && Array.isArray(arr2) &&
+        arr1.length === arr2.length &&
+        arr1.every((val, index) => val === arr2[index]);
 };
 
 const assertArraysEqual = function(actual, expected) {
-  if (actual === expected) {
+  if (eqArrays(actual, expected)) {
     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else
+  } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  return;
-};
+  }
+ }
 
 const without = function(source, itemsToRemove) {
   source = source.filter(function(remove) {
