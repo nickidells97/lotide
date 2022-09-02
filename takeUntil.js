@@ -34,3 +34,5 @@ const results2 = takeUntil(emotions, limit => limit === 'scared');
 assertArraysEqual(results1, [1, 2, 4, 5, 6]);
 
 assertArraysEqual(results2, ['happy', 'sad']);
+
+module.exports = takeUntil;
