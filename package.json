@@ -1,6 +1,6 @@
 {
   "name": "@nickidells/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library to be used for many great things, such as comparing arrays or returning specific sections of an array.",
   "main": "index.js",
   "directories": {
