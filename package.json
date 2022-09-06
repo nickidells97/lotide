@@ -1,0 +1,26 @@
+{
+  "name": "@nickidells/lotide",
+  "version": "1.0.0",
+  "description": "A library to be used for many great things, such as comparing arrays or returning specific sections of an array.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickidells97/lotide.git"
+  },
+  "author": "Nick Dellar-Fernandes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickidells97/lotide/issues"
+  },
+  "homepage": "https://github.com/nickidells97/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2"
+  }
+}
