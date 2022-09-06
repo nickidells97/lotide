@@ -32,4 +32,3 @@ The following functions are currently implemented:
 * `eqArrays`: Checks to see if the arrays are equal or not.
 * `assertEqual`: Returns true or false of wether the actual value is equal to the expected value.
 * `assertArraysEqual`: Similar functionality to that of assertEqual, however this assertion is used to compare arrays, as assertEqual will not work. 
-*

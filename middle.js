@@ -1,12 +1,11 @@
 const middle = function(array) {
   let results = [];
-  if (array.length % 2 === 0) {
-    results = new Array(2);
-    results[0] = array.length / 2;
-    results[1] = array.length / 2 + 1;
+  const array1 = array;
+  if (array.length % 2 === 0) { //if the array is even, it will return the two middle-most values of the array
+    results.push(array1.length / 2);
+    results.push(array1.length / 2 + 1);
   } else {
-    results = new Array(1);
-    results[0] = array.length / 2;
+    results.push(array1.length / 2); //If the array is odd, it will return the single middle-most value of the array
   }
   return results;
 };
